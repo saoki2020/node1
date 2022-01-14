@@ -1,44 +1,26 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Register</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <header>
-      <div class="header_logo">
-        Laravel
-      </div>
-      <nav class="header_menu">
-        <ul>
-          <li><a href="/register">Register</a></li>
-          <li><a href="/login">Login</a></li>
-        </ul>
-      </nav>
-    </header>
-    <form>
-      <fieldset>
-        <legend>Register</legend>
-        <div>
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name">
-        </div>
-        <div>
-          <label for="email">E-Mail Address</label>
-          <input type="text" name="email" id="email">
-        </div>
-        <div>
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password">
-        </div>
-        <div>
-          <label for="confirm_password">Confirm Password</label>
-          <input type="password" name="confirm_password" id="confirm_password">
-        </div>
-        <div class="btn">
-          <button type="submit" name="Register">Register</button>
-        </div>
-      </fieldset>
-    </form>
-  </body>
-</html>
+<%- include('parts/header'); %>
+<form>
+  <fieldset>
+    <legend>Register</legend>
+    <div>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name">
+    </div>
+    <div>
+      <label for="email">E-Mail Address</label>
+      <input type="text" name="email" id="email">
+    </div>
+    <div>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password">
+    </div>
+    <div>
+      <label for="confirm_password">Confirm Password</label>
+      <input type="password" name="confirm_password" id="confirm_password">
+    </div>
+    <div class="btn">
+      <button type="submit" name="Register">Register</button>
+    </div>
+  </fieldset>
+</form>
+<%- include('parts/footer'); %>
