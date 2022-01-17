@@ -1,8 +1,60 @@
 body {
-  padding: 50px;
+  padding: 0px;
+  margin: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+form {
+  width: 60%;
+  margin: auto;
+  margin-top: 200px;
+}
+
+form div {
+  margin: 10px;
+  text-align: center;
+}
+
+label[for="password"], label[for="email"], label[for="name"], label[for="confirm_password"] {
+  display: inline-block;
+  width: 30%;
+}
+
+button {
+  padding: 8px;
+  border-radius: 10px;
+  background-color: #00B7FF;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: lightgray;
+  z-index: 10;
+}
+
+.header_menu li {
+  list-style: none;
+  float: right;
+  padding: 30px;
+}
+
+.header_logo {
+  font-size: x-large;
+  float: left;
+  padding: 40px;
+}
+
+li a {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  line-height: 100%;
 }
