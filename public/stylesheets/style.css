@@ -58,3 +58,23 @@ li a {
   padding: 10px;
   line-height: 100%;
 }
+
+table {
+  width: 60%;
+  margin: auto;
+  margin-top: 200px;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: lightgray;
+  font-size: x-large;
+}
+
+tr {
+  border: solid 1px lightgray;
+}
+
+td {
+  padding: 10px;
+}
