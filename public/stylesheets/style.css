@@ -27,6 +27,7 @@ label[for="password"], label[for="email"], label[for="name"], label[for="confirm
 button {
   padding: 8px;
   border-radius: 10px;
+  border-color: lightgray;
   background-color: #00B7FF;
   color: #FFFFFF;
   cursor: pointer;
@@ -77,4 +78,14 @@ tr {
 
 td {
   padding: 10px;
+}
+
+.user_box {
+  margin-top: -100px;
+  margin-right: 20px;
+  float: right;
+}
+
+.user_box button {
+  float: right;
 }
