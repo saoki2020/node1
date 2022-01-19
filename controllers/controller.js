@@ -1,5 +1,4 @@
-const express = require('express');
-const { validateForm } = require('../modules/validator');
+const { validationResult } = require('express-validator');
 
 module.exports = {
   goIndex(req, res) {
@@ -12,8 +11,10 @@ module.exports = {
     res.render('register', { title: 'Register'} );
   },
   goHome(req, res) {
-    if (validateForm(req, res) == true) {
-      res.render('home', { title: 'Home', name: req.body.name} );
-    }
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(422).json({ errors: errors.array() });
+    };
+    res.render('home', { title: 'Home', name: req.body.name} );
   }
 }
